@@ -1,0 +1,229 @@
+.home small {
+    white-space: nowrap;
+}
+
+@media (max-width: 1630px) {
+    .nav-header li a{
+       font-size: 3vw;
+    }
+    .nav-header>ol {
+        padding-left: 0;
+    }
+    .tag-title{
+        margin-top: 0.87em;
+    }
+}
+@media (max-width: 1370px) {
+    body.tag article, body.home article {
+        grid-template-columns: 50% 50%;
+    }
+    .nav-header{
+        margin-right: 0;
+    }
+}
+@media (max-width: 1285px) {
+    header.container {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+    }
+    header.container .logo {
+        margin-left: 2rem;
+        order: 1;
+    }
+    .user-bar {
+        margin-right: 2rem;
+        order: 1;
+        box-shadow: var(--h-light) 0px 0px 10px 2px;
+    }
+    .box-edit{
+        margin-right: 0;
+    }
+    body.edit article.container {
+        min-width: 100%;
+    }
+    .nav-header {
+        order: 2;
+        flex-grow: 1;
+
+        flex-flow: wrap;
+        justify-content: center;
+        flex-basis: 100%;
+        line-height: 6vw;
+
+        border-top: 1px solid red;
+        text-align: center;
+    }
+    .app-header:first-of-type {
+        padding-left: 0;
+    }
+    .app-header:last-of-type {
+        padding-right: 0;
+    }
+    .nav-header ol > li:first-child {
+        border-left: 0;
+    }
+    .nav-header ol > li:last-child {
+        border-right: 0;
+    }
+    .nav-header li a{
+        font-size: 3rem;
+    }
+
+}
+@media (max-width: 1000px) {
+    body.tag article, body.home article {
+        grid-template-columns: 100%;
+    }
+    .nav-header li a{
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    .nav-header li {
+        padding: 0 5px;
+    }
+
+    /* if body.tag */
+    body.tag header.container{
+
+        flex-flow: column;
+        }
+        body.tag header.container .logo{
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        body.tag .nav-header{
+            border-top: none;
+        }
+        body.tag .nav-header li {
+            transition: none;
+            border-right: none;
+        }
+        body.tag .nav-header li a{
+            font-size: 3rem;
+            line-height: 80px;
+        }
+        body.tag .nav-header li h1:first-child{
+            border-top: none;
+        }
+        body.tag .nav-header ol {
+            flex-direction: column;
+            padding-top: 3rem;
+        }
+        body.tag .nav-header ol li:active, 
+        .nav-header ol li:hover {
+            padding-top: 0;
+        }
+        body.tag .nav-header ol li {
+            margin: 0;
+        }
+        body.tag .nav-header ol li h1 {
+            margin: 0;
+        }
+        body.tag .user-bar{
+            margin-right: 0;
+        }
+        body.tag .logout{
+            padding-top: 0;
+        }
+        .tag-title {
+            float: none;
+            margin-top: 30px;
+    }
+    /* my post */
+    body.user article.container,
+    body.my-posts article.container {
+        padding: 5rem 1rem;
+    }
+    #share-profile > input {
+        width: 100%;
+    }
+    .options .dropdown {
+        top: -224px;
+        left: -73px;
+    }
+    /* post */
+    .box {
+        width: 100vw;
+    }
+    .show-post-content p {
+        max-width: 100vw;
+    }
+    /* delete */
+    body.delete .box {
+        min-width: auto;
+    }
+    /* edit */
+    body.edit article.container {
+        padding: 5rem 0;
+    }
+}
+@media (max-width: 850px) {
+    .nav-header li a{
+        font-size: 6vw;
+        line-height: 7vw;
+    }
+    form.post .btn-primary {
+        float: none;
+        width: 100%;
+    }
+    .or{
+        margin-bottom: 20px;
+    }
+    .comments {
+        padding-left: 0px;
+    }
+}
+@media (max-width: 665px) {
+    .comment img{
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    header.container{
+        flex-flow: column;
+    }
+    header.container .logo{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+    .nav-header{
+        border-top: none;
+    }
+    .nav-header li a{
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .nav-header ol {
+        flex-direction: column;
+        padding-top: 2rem;
+    }
+    .nav-header li {
+        border-right: none;
+    }
+    .nav-header ol li:active, 
+    .nav-header ol li:hover {
+        padding-top: 0;
+    }
+    .nav-header ol li {
+        margin: 0;
+    }
+    .nav-header ol li h1 {
+        margin: 0;
+    }
+    .user-bar{
+        margin-right: 0;
+    }
+    .logout{
+        padding-top: 0;
+    }
+    body.tag .nav-header li:first-child h1{
+        margin: 15px 0;
+    }
+    body.my-posts article.container {
+        padding: 5rem 0rem;
+    }
+    .edit-user .avatar-image img{
+        display: none;
+    }
+}

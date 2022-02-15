@@ -1,0 +1,166 @@
+body.post{
+   background: #b75e10;
+}
+body.post .post-content{
+   line-height: 1.3rem;
+   color: #394775;
+}
+.box{
+   background: #ffcd51;
+   box-shadow: black 0px 0px 9px 5px;
+   padding: 5%;
+   min-width: 75vw;
+}
+.show-post-content .written-by{
+   border-top: 4px solid #dfff00;
+   border-radius: 30%;
+}
+
+body.post .written-by a,
+body.post .written-by{
+   color: black;
+}
+body.user .author li:last-child a{
+   color: #3f4f87;
+}
+
+
+/* Post-create */
+form.post .form-control{
+   height: auto;
+   width: 100%;
+}
+form.post .btn-primary{
+   display: block;
+   float: right;
+   width: 25%;
+}
+form.post .or{
+   display: block;
+   float: right;
+}
+form.post .or a{
+   color: red;
+}
+form.post .checkbox{
+   margin: 5px;
+   color: black;
+}
+.show-post-content {
+   display: grid;
+}
+.show-post-content p{
+   max-width: 75vw;
+   white-space: pre-line;
+   font-size: 120%;
+}
+.show-post-content p:first-child{
+   min-height: 400px;
+}
+.full-post h1{
+   padding-bottom: 65px;
+}
+.written-by small{
+   float: right;
+   padding: 10px;
+   color: lightcyan;
+   background: #db10100f;
+   box-shadow: 0px 0px 3px 1px beige;
+   border-radius: 20px;
+   transition: 0.4s;
+}
+.written-by small:hover,
+.written-by small:active {
+   background: #b75e10;
+}
+.written-by small a{
+   color: initial;
+   text-decoration: none;
+}
+.full-post footer{
+   width: 100%;
+}
+/* post edit */
+.post-head h1{
+   padding-bottom: 0px;
+   border-bottom: none;
+}
+.post-head {
+   padding-bottom: 1rem;
+   border-bottom: 1px dashed #42548f;
+}
+.post-head>a{
+   float: right;
+   margin-left: 10px;
+   
+   color: red;
+   text-decoration: none;
+}
+.post-head>a:last-of-type{
+   color: rgb(251, 255, 250);
+   text-shadow: 1px 1px 1px black;
+   font-size: large;
+}
+body.edit .or{
+   color: rgb(251, 255, 250);
+   text-shadow: 1px 1px 1px black;
+}
+body.edit .or a{
+   color: green;
+   text-shadow: none;
+}
+/* post delete */
+body.delete .box{
+   min-width: 949px;
+   background: #ff8251;
+}
+body.delete .btn-primary:hover,
+body.delete .btn-primary:focus{
+   background: red;
+   color: black;
+   transition: 1s;
+}
+blockquote.form-group {
+   border-left: 6px solid;
+   padding: 25px;
+   max-width: 900px;
+}
+.comments {
+   display: flex;
+   flex-direction: column;
+   margin-top: 25px;
+}
+.comment {
+   display: flex;
+   margin-top: 15px;
+   margin-top: 20px;
+}
+.comment:last-child {
+   margin-bottom: 40px;
+}
+.comment main {
+   border-top: ridge whitesmoke;
+}
+.comment a{
+   font-size: 25px;
+
+   color: #fffb00;
+   text-shadow: 1px 1px 2px black;
+   text-decoration: none;
+}
+.comment small{   
+   color: white;
+   text-shadow: 1px 1px 1px black;
+}
+.comment img {
+   margin-right: 15px;
+   box-shadow: 0 0 5px 3px white;
+   background: rgb(255, 255, 255, 0 );
+}
+.comment p {
+   margin: 0;
+}
+#discussion .form-control {
+   background: #fff;
+   outline: groove;
+}

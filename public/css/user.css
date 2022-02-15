@@ -1,0 +1,139 @@
+body.user article.container{
+   display: block;
+   padding: 5rem;
+
+   border-left: 2px dotted #fff;
+   border-right: 2px dotted #fff;
+   background: darkgoldenrod;
+   border-radius: 5px;
+   min-width: 75vw;
+}
+body.user{
+   background-color: black;
+}
+body.user main.container{
+   max-width: 1920px;
+   margin: 0 auto;
+}
+body.user .header-title{
+   border-top: 0;
+}
+body.user .post-header{
+   background: bisque;
+   padding: 0.4rem;
+   border-radius: 20px;
+}
+body.user .post{
+   border-radius: 5px;
+   padding: 1rem;
+   background-color: darkkhaki;
+   margin: 1rem 0 3rem;
+   
+}
+body.user .post:nth-child(odd){
+   background: goldenrod;
+}
+body.user .author{
+   height: auto;
+   box-shadow: #38ff00 0px 0px 7px 2px;
+}
+.form-edit-profile .form-control{
+   margin: 5px 0 ;
+}
+.edit-user{
+   min-width: 0;
+}
+.edit-user #edit-form{
+   background-color: #59566a;
+   padding-bottom: 0px;
+}
+.edit-user .avatar-image{
+   display: flex;
+   justify-content: center;
+}
+.edit-user.box{
+   padding: 2%;
+   background: darkslateblue;
+}
+.edit-user .form-control{
+   margin: 5px 0;
+}
+.edit-user .no-drop{
+   margin-top: 0;
+   margin-bottom: 20px;
+   cursor: no-drop;
+   color: white;
+   
+   background: #6d2323;
+   border: outset red;
+}
+body.user input {
+   text-align: center;
+}
+.edit-user .btn-primary{
+   margin-top: 15px;
+   margin-bottom: 0px;
+}
+body.user .btn-primary{
+   margin-top: 14px;
+   width: 100%;   
+   border-radius: 5px 5px 0 0;
+}
+body.edit .edit-user .or{
+   margin-top: 20px;
+   margin-left: 10px;
+   font-size: 17px;
+}
+body.edit .edit-user .or a{
+   color: #15ff15;
+}
+.box-edit #avatar-info li{
+   justify-content: flex-start;
+   padding-left: 10px;
+}
+body.user .edit-user .post{
+   background-color: sienna;
+}
+.avatar-image input{
+   height: 25px;
+   padding-right: 10px;
+}
+.edit-user span{
+   display: flex;
+   padding-left: 2px;
+
+   text-transform: capitalize;
+   flex-direction: column;
+   justify-content: end;
+}
+.edit-user .avatar-image span:first-child{
+   padding-left: 6px;
+   padding-bottom: 2px;
+   color: darkseagreen;
+   border-bottom: none;
+   box-shadow: -1px 0px 4px 2px black;
+}
+
+.edit-user img{
+   border: dashed deepskyblue;
+   background: none;
+}
+
+/* user page edit */
+.polisss\@larablog\.cz .author #avatar-info li:first-child a {
+   font-size: 20px;
+   color: #f00;
+   text-shadow: none;
+   text-transform: capitalize;
+}
+body.user.polisss\@larablog\.cz article.container {
+   background: #880923;
+   font-size: 20px;
+}
+.polisss\@larablog\.cz .author #avatar-info li:last-child a {
+   color: #00e7ff;
+}
+.polisss\@larablog\.cz .name-code {
+   color: steelblue;
+   font-size: 30px;
+}

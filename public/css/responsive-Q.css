@@ -1,0 +1,7 @@
+@media (max-width: 1000px) {
+    .box{
+        width: 350px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
