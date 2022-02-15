@@ -74,7 +74,9 @@ class User extends Authenticatable
             return asset('img/users/default/1.png');
         }   
     }
-
+    /**
+     * in case of setting Czech localization rename rank
+    **/
     public function getRankAttribute($value)
     {
         switch ( App::getLocale()) {
