@@ -44,13 +44,27 @@ function copy() {
 var discussion = $('#discussion');
 discussion.find('form').on('submit', function (event) {
     var form = $(this);
+        errMess = $(document).find(".err");
 
+    if ( errMess ){
+        errMess.remove();
+    }
     var req = $.ajax({
         url: form.attr('action'),
         type: "post",
         data: form.serialize(),
+        dataType: 'json',
+        error: function (err) {
+            if (err.status == 422) { // when status code is 422, it's a validation issue
+                // display errors on each form field
+                $.each(err.responseJSON.errors, function (i, error) {
+                    var el = $(document).find(".btn-primary");
+                    el.after($('<span class="arrow-up err">'+error[0]+'</span>'));
+                });
+            }
+        }
     });
-
+    // when the request passes validation, show comment
     req.done( function (data) { 
       $.ajax({
             url: 'comment/' + data.id,
@@ -61,10 +75,8 @@ discussion.find('form').on('submit', function (event) {
                 li.fadeIn();
             }
         });
-
     });
 
     form.find('textarea').val('').focus();
-
     event.preventDefault();
 });

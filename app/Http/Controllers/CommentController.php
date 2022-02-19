@@ -6,27 +6,16 @@ use App\Models\Post;
 use App\Models\Comment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\SaveCommentRequest;
 
 class CommentController extends Controller
 {
     /**
      * Store a newly created comment in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(SaveCommentRequest $request)
     {
-        // simple validation
-        if ( ! $request->get('text') ) {
-            if( $request->ajax() ) {
-                return response()->json([
-                    'error' => 'no text'
-                ]);
-            }
-            return back()->withErrors([ 'text' => 'gotta write something']);
-        }
-
         $post = Post::findOrFail( $request->get('post_id') );
 
         $comment = Comment::create([
@@ -34,7 +23,6 @@ class CommentController extends Controller
             'user_id' => Auth::id(),
             'text' => $request->get('text'),
         ]);
-
         if ( $request->ajax() ) {
             return response()->json([
                 'id' => $comment->id,
