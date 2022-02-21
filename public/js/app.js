@@ -62,6 +62,11 @@ discussion.find('form').on('submit', function (event) {
                     el.after($('<span class="arrow-up err">'+error[0]+'</span>'));
                 });
             }
+            if (err.status == 401) { //when status code is 401, there is a problem validating the rules
+                // display errors
+                var el = $(document).find(".btn-primary");
+                el.after($('<span class="arrow-up err">'+err.responseJSON.message+'</span>'));
+            }
         }
     });
     // when the request passes validation, show comment

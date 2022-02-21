@@ -20,5 +20,7 @@ return [
     'file'  => 'nahrát svého avatara ↓ max.(2,5 MB)',
     'holder_comment'  => 'zvažte svůj komentář a nebuďte vulgární 🕵🏼',
     'add_coment'  => 'Přidat komentář',
-
+    'g_written_by'  => '⚠️ Pro zobrezení profilu autora - musíš být přihlášen.',
+    'holder_comment_disabled'  => '⚠️ Pokud chceš okomentovat článek - musíš být přihlášen.',
+    'g_tags'  => '⚠️ Pro zobrazení článku podle hash - musíš být přihlášen.',
 ];

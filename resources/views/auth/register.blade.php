@@ -1,7 +1,7 @@
 <x-guest-layout>
     @section('logo')
         <h1 class="logo">
-        <a href="#"><strong>LARA</strong>blog<strong>!&acute;</strong></a>
+            <a href="{{route('ghome')}} "><strong>LARA</strong>blog<strong>!&acute;</strong></a>
         </h1>
     @endsection
     @section('content')  

@@ -22,6 +22,7 @@ return [
      
     // login form
     'login' => 'Login',
+    'guest' => 'Guest',
     'email' => 'email@adress.com',
     'password' => 'password',
     'remember_me' => 'remember me',

@@ -401,8 +401,8 @@ body.register>main.container>aside.nav-all {
 .nav-header ol li:hover .add-new  {
     color: #00FF00;
 }
-.nav-header ol li:active:last-of-type a, 
-.nav-header ol li:hover:last-of-type a{
+.nav-header ol li .logout:active, 
+.nav-header ol li .logout:hover{
     color: red;
     transition: 2s;
     text-shadow: -1px -2px #fff;
@@ -575,6 +575,15 @@ body.home .post:nth-child(3n+3), body.tag .post:nth-child(3n+3){
  body.home .post small,
  body.tag .post small{
     font-size: 57%;
+}
+.tags span{
+    display: none;
+}
+.tags span:first-child{
+    display: block;
+    color: #827c27;
+    background-color: gold;
+    text-align: center;
 }
 .bar-tags{
     display: inline-block;

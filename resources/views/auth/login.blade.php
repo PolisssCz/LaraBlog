@@ -1,7 +1,7 @@
 <x-guest-layout>
     @section('logo')
         <h1 class="logo">
-        <a href="#"><strong>LARA</strong>blog<strong>!&acute;</strong></a>
+            <a href="{{route('ghome')}} "><strong>LARA</strong>blog<strong>!&acute;</strong></a>
         </h1>
     @endsection
 @section('content')
@@ -36,6 +36,7 @@
         
         <p class="alt-action">
         {{ trans('auth.or') }} <a href=" {{ route('register') }} ">{{ trans('auth.create_account') }}</a>
+        {{ trans('auth.or') }} <a href=" {{ route('ghome') }} ">{{ trans('auth.guest') }}</a>
         </p>
     </form>
 @endsection

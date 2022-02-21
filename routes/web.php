@@ -31,6 +31,10 @@ Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'App\Http\Controller
 |-------------
 */
 require __DIR__.'/auth.php';
+Route::middleware(['guest'])->group(function () {
+    Route::get('home/guest',  [PostController::class, 'index'])->name('ghome');               // all post
+    Route::get('{slug}/guest',[PostController::class, 'show'])->name('gpost.show');           // post by slug
+});
 
 /* 
 |-------------
@@ -47,10 +51,10 @@ Route::middleware(['administrator','auth'])->group(function () {
 */
 Route::middleware(['auth'])->group(function () {
     Route::get('/',          [PostController::class, 'index'])->name('home');               // all post
+    Route::get('{slug}',     [PostController::class, 'show'])->name('post.show');           // post by slug
     Route::get('/user/{email}', [UserController::class, 'show'])->name('user.post');        // post by user email
     Route::get('/user/edit/{email}', [UserController::class, 'edit'])->name('user.edit');   // Edit user profile
     Route::get('/tag/{tag}',  [TagController::class, 'show']);                              // post by tag
-    Route::get('{slug}',     [PostController::class, 'show'])->name('post.show');           // post by slug
     Route::put('{slug}',     [PostController::class, 'update'])->name('post.update');       // post update by slug
     Route::get('/edit/{slug}',[PostController::class, 'edit'])->name('post.edit');          // post edit by slug
     Route::get('/delete/{slug}',[PostController::class, 'delete'])->name('post.delete');    // post delete by slug

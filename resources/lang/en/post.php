@@ -20,7 +20,8 @@ return [
     'file'  => 'upload your avatar ↓ max.(2,5 MB)',
     'holder_comment'  => 'consider your comment and don\'t be vulgar 🕵🏼',
     'add_coment'  => 'Add comment',
-
-
+    'g_written_by'  => '⚠️ you must be logged in - to view author profile.',
+    'holder_comment_disabled'  => '⚠️you must be logged in to post a comment.',
+    'g_tags'  => '⚠️ you must be logged in - to view posts by hash.',
 ];
 

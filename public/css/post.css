@@ -163,6 +163,15 @@ blockquote.form-group {
 #discussion .form-control {
    background: #fff;
    outline: groove;
+   max-width: 74vw;
+   min-width: 335px;
+   min-height: 50px;
+}
+#discussion .form-control.disabled {
+   background: #ff00002e;
+   color: red;
+   outline: ridge red;
+   cursor: no-drop;
 }
 .err{
    position: relative;

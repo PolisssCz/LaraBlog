@@ -9,14 +9,14 @@
     </aside>
 @else
     <aside class="user-bar author">
-        <a class="avatar-image" href="{{ route('user.edit', Auth::user()->email)}}"><img src="{{$user->avatar}}" alt="avatar" ></a>
+        <a class="avatar-image" href="{{ route('user.edit', $user_email = Auth::user()->email)}}"><img src="{{$user->avatar}}" alt="avatar" ></a>
         <ul id="avatar-info">
             <li><a href="#">{{ $email }}</a></li>
-            <li><a class="{{ URL::current() }}" href="{{ route('user.edit', Auth::user()->email)}}">{{ $rank }} {{ $name }}  </a></li>
+            <li><a class="{{ URL::current() }}" href="{{ route('user.edit', $user_email)}}">{{ $rank }} {{ $name }}  </a></li>
         </ul>
     </aside>
 
-    @if ( $email == $user_email = Auth::user()->email )
+    @if ( $email == $user_email)
         <div class="options">
             <label id="share-profile">
                 <h4>{{ __('post.share') }}</h4>

@@ -22,6 +22,7 @@ return [
 
     //login form
     'login' => 'Přihlášení',
+    'guest' => 'Host',
     'email' => 'email@adresa.cz',
     'password' => 'heslo',
     'remember_me' => 'zapamatovat údaje',

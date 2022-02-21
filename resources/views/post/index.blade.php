@@ -12,16 +12,21 @@
 
         @forelse ($posts as $post)
             <section id="post-{{ $post->id }}" class="post">
+
                 <header class="post-header">
                     <h2>
-                        <a href="{{ route('post.show', $post->slug) }}">
-                            {{ $post->title }}
-                        </a>
+                        @if ( $Auth_user = Auth::check() )                            
+                            <a href="{{ route('post.show', $post->slug) }}"> {{ $post->title }} </a>
+                        @else
+                            <a href="{{ route('gpost.show', $post->slug) }}"> {{ $post->title }} </a>                            
+                        @endif
+
                         <time datatime="{{ $post->updated_at }}">
                             <small>/&nbsp;{{ $post->created_at }}</small>
                         </time>
                     </h2>
                 </header>
+
                 <div class="post-content">
                     <p>
                         {{ $post->teaser }}
@@ -31,7 +36,11 @@
                 @include('components.tags')
 
                 <footer class="post-footer">
-                    <a href="{{ route('post.show', $post->slug) }}" class="read-more">{{ __('post.read_more') }}</a>
+                   @if ( $Auth_user )
+                        <a href="{{ route('post.show', $post->slug) }}" class="read-more">{{ __('post.read_more') }}</a>        
+                    @else
+                        <a href="{{ route('gpost.show', $post->slug) }}" class="read-more">{{ __('post.read_more') }}</a>   
+                    @endif
                     @if ($name === "continue")
                     @else
                         <small class="name-code">{{$name}}</small>

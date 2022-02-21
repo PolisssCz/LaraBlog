@@ -21,10 +21,15 @@
                 </div>
                 <div class="show-post-content">
                     <p>{!! $post->text !!}</p>
-
+                    @if (Auth::check())
+                        <p class="written-by small">
+                            <small>{{ __('post.written_by') }}<a href=" {{ route('user.post', $post->user->email) }} ">{{$post->user->email}}</a></small>
+                        </p>
+                    @else
                     <p class="written-by small">
-                        <small>{{ __('post.written_by') }}<a href=" {{ route('user.post', $post->user->email) }} ">{{$post->user->email}}</a></small>
+                        <small><a href=" {{ route('login') }} ">{{ __('post.g_written_by') }}</a></small>
                     </p>
+                    @endif
 
                     <footer class="post-footer">
                         @include('components.tags')

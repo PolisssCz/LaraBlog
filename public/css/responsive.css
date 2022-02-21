@@ -54,6 +54,10 @@
         border-top: 1px solid red;
         text-align: center;
     }
+    body.guest .nav-header{
+        flex-basis: initial;
+        justify-content: start;
+    }
     .app-header:first-of-type {
         padding-left: 0;
     }
@@ -75,14 +79,19 @@
     body.tag article, body.home article {
         grid-template-columns: 100%;
     }
-    .nav-header li a{
+    .nav-header li a{   
         font-size: 5vw;
         line-height: 6vw;
     }
     .nav-header li {
         padding: 0 5px;
     }
-
+    body.guest .nav-header li{
+        padding: 0 16px;
+    }
+    #discussion .form-control {
+        max-width: 87vw;
+    }
     /* if body.tag */
     body.tag header.container{
 
