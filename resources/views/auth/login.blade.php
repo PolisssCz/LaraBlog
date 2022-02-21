@@ -33,10 +33,11 @@
         <x-button class="btn-primary">
             {{ trans('auth.login') }}
         </x-button>
-        
+
+        <a class="btn-primary g-home" href="{{ route('ghome') }}">{{ trans('auth.continue_guest') }}</a>
+
         <p class="alt-action">
         {{ trans('auth.or') }} <a href=" {{ route('register') }} ">{{ trans('auth.create_account') }}</a>
-        {{ trans('auth.or') }} <a href=" {{ route('ghome') }} ">{{ trans('auth.guest') }}</a>
         </p>
     </form>
 @endsection

@@ -246,6 +246,28 @@ body.create input:valid {
 .btn-primary:hover{
     background: #0dae2d;
 }
+.box-auth .g-home{
+    margin-top: 0;
+    padding-top: 13px;
+    width: 70%;
+    text-align: center;
+    background: teal;
+    color: orange;
+}
+.box-auth .g-home:hover{
+    background: rgba(32, 255, 2, 0.15);
+    color: rgba(255, 166, 0, 0.5);
+    text-decoration: none;
+    transform: 1s;
+}
+.box-auth .g-home:hover::before{
+    position: relative;
+    top: -1px;
+    content: "⚠️";
+}
+.btn-primary .g-home:hover{
+    background: #0dae2d;
+}
 .form-control{
     width: 70%;
     height: 45px;
