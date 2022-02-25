@@ -602,10 +602,14 @@ body.home .post:nth-child(3n+3), body.tag .post:nth-child(3n+3){
     display: none;
 }
 .tags span:first-child{
+    margin-bottom: 5px;
+    padding: 4px 0;
     display: block;
+
+    text-align: center;
     color: #827c27;
     background-color: gold;
-    text-align: center;
+    box-shadow: 0px 0px 2px 2px red; 
 }
 .bar-tags{
     display: inline-block;
