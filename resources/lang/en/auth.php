@@ -28,7 +28,7 @@ return [
     'remember_me' => 'remember me',
     'create_account' => 'Create account',
     'or' => 'or',
-    'continue_guest' => 'Continue as a guest',
+    'continue_guest' => 'Continue as a ghost',
 
      //register form
      'nickname' => 'Nickname',

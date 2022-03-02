@@ -260,10 +260,10 @@ body.create input:valid {
     text-decoration: none;
     transform: 1s;
 }
-.box-auth .g-home:hover::before{
+.box-auth .g-home:hover::after{
     position: relative;
     top: -1px;
-    content: "⚠️";
+    content: "👻";
 }
 .btn-primary .g-home:hover{
     background: #0dae2d;

@@ -28,7 +28,7 @@ return [
     'remember_me' => 'zapamatovat údaje',
     'create_account' => 'Vytvoř účet',
     'or' => 'nebo',
-    'continue_guest' => 'Pokračovat jako host',
+    'continue_guest' => 'Pokračovat jako duch',
 
     //register form
     'nickname' => 'Přezdívka (jméno)',
