@@ -215,7 +215,8 @@ body.create input:valid {
     text-decoration-line: none;
     color: #0066cc;
 }
-.box-auth a:hover{
+.box-auth .alt-action a:active,
+.box-auth .alt-action a:hover{
     text-decoration-line: underline;
     color: #1c7ddd;
 }
@@ -268,6 +269,19 @@ body.create input:valid {
 .btn-primary .g-home:hover{
     background: #0dae2d;
 }
+.box-auth .a-home{
+    padding-top: 13px;
+    text-align: center;
+    color: #00FF00;
+}
+.a-home h1 .logo {
+    border-bottom: none;
+}
+.home-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .form-control{
     width: 70%;
     height: 45px;
@@ -286,6 +300,7 @@ form > .logo{
     font-size: 2.8rem;
     border-top: 0;
 }
+
 
 .checkbox{
     display: inline;
