@@ -23,6 +23,9 @@ body.post .written-by{
 body.user .author li:last-child a{
    color: #3f4f87;
 }
+.tags{
+   max-width: 75vw;
+}
 
 
 /* Post-create */
