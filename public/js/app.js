@@ -115,7 +115,7 @@ emojiBtn.on('click', function () {
     }
 })  
 // insert a smiley where the cursor is located
-var emojiMenu = $('#discussion li');
+var emojiMenu = $('#discussion .emoji-list li');
 emojiMenu.on('click', function() {
     var cursorPosition = $("#discussion textarea")[0].selectionStart;
     var FirstPart = $("#discussion textarea").val().substring(0, cursorPosition);
