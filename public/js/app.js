@@ -100,11 +100,18 @@ emojiBtn.on('click', function () {
         emojiBtn.attr("src","img/app/a-emoji-icon-R.png")
                 .addClass('active')
         $(".emoji-list").css('display', 'grid');
-    } else { // close the emoji menu
+        $(".emoji-list").hide().fadeIn();
+    } 
+    else { 
+        // close the emoji menu
         var emojiActive = $(".emoji-btn.active");
-        emojiActive.attr("src","img/app/emoji-icon-R.png")
-            .removeClass('active')
+        emojiActive.attr("src","img/app/emoji-icon-R.png");
+            
         $(".emoji-list").css('display', 'none');
+        $(".emoji-list").show().fadeOut().queue(function(next){
+            emojiActive.removeClass('active');
+            next();
+        });
     }
 })  
 // insert a smiley where the cursor is located

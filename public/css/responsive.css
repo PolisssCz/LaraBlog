@@ -173,8 +173,7 @@
         line-height: 7vw;
     }
     form.post .btn-primary {
-        float: none;
-        width: 100%;
+        width: 60%;
     }
     .or{
         margin-bottom: 20px;
@@ -186,6 +185,9 @@
 @media (max-width: 665px) {
     .comment img{
         display: none;
+    }
+    form.post .btn-primary {
+        width: 50%;
     }
 }
 @media (max-width: 550px) {
