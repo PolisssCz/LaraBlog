@@ -37,7 +37,8 @@
         ]) !!}
     {!! Form::close() !!}
     @endif
-
+    
+    {{-- Emoji menu --}}
     <img class="emoji-btn" src="img/app/emoji-icon-R.png" alt="emoji">
     <ul class="emoji-list">
         <li>&#128578;</li>
