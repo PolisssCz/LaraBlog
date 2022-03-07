@@ -37,4 +37,10 @@
         ]) !!}
     {!! Form::close() !!}
     @endif
-    </div> 
+
+    <img class="emoji-btn" src="img/app/emoji-icon-R.png" alt="emoji">
+    <img class="emoji-btn active" src="img/app/a-emoji-icon-R.png" alt="emoji">
+    <ul class="emoji-list">
+        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+</div> 
