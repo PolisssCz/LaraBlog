@@ -1,3 +1,4 @@
+;(function($, window, document, undefined){
 /*
 * ADD FORM
 */
@@ -85,3 +86,36 @@ discussion.find('form').on('submit', function (event) {
     form.find('textarea').val('').focus();
     event.preventDefault();
 });
+
+/*
+    * discussion *
+    **************
+    | EMOJI MENU |
+    **************
+*/
+var emojiBtn = $(".emoji-btn");
+emojiBtn.on('click', function () { 
+    if ($(".emoji-btn.active").length == 0) {
+        // opening the emoji menu
+        emojiBtn.attr("src","img/app/a-emoji-icon-R.png")
+                .addClass('active')
+        $(".emoji-list").css('display', 'grid');
+    } else { // close the emoji menu
+        var emojiActive = $(".emoji-btn.active");
+        emojiActive.attr("src","img/app/emoji-icon-R.png")
+            .removeClass('active')
+        $(".emoji-list").css('display', 'none');
+    }
+})  
+// insert a smiley where the cursor is located
+var emojiMenu = $('#discussion li');
+emojiMenu.on('click', function() {
+    var cursorPosition = $("#discussion textarea")[0].selectionStart;
+    var FirstPart = $("#discussion textarea").val().substring(0, cursorPosition);
+    var smile = $(this).text();
+    var SecondPart = $("#discussion textarea").val().substring(cursorPosition, $("#discussion textarea").val().length);
+    $("#discussion textarea").val(FirstPart+smile+SecondPart);
+});
+
+
+})(jQuery, window, document, undefined);

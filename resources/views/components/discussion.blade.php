@@ -39,8 +39,18 @@
     @endif
 
     <img class="emoji-btn" src="img/app/emoji-icon-R.png" alt="emoji">
-    <img class="emoji-btn active" src="img/app/a-emoji-icon-R.png" alt="emoji">
     <ul class="emoji-list">
-        <li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+        <li>&#128578;</li>
+        <li>&#128521;</li>
+        <li>&#128512;</li>
+        <li>&#128151;</li>
+        <li>&#128577;</li>
+        <li>&#128539;</li>
+        <li>&#128558;</li>
+        <li>&#128293;</li>
+        <li>&#128548;</li>
+        <li>&#10024;</li>
+        <li>&#128078;</li>
+        <li>&#128077;</li>
     </ul>
 </div> 

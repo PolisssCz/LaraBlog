@@ -203,7 +203,6 @@ blockquote.form-group {
 .emoji-btn.active{
    left: 4px;
    bottom: 87px;
-   display: none;
 }
 .emoji-list{
    position: relative;
@@ -221,56 +220,14 @@ blockquote.form-group {
    column-gap: 5px;
    row-gap: 1px;
    justify-items: center;
+   display: none;
 }
 .emoji-list>li{
    padding: 5px;
    cursor: pointer;
-   background: whitesmoke;
+   background: white;
+   width: 32px;
 }
 .emoji-list>li:hover{
-   background: white;
-}
-.emoji-list li:nth-child(1)::after{
-   content: '\01F642';
-}
-.emoji-list li:nth-child(2)::before{
-   content: '\01F609';
-}
-.emoji-list li:nth-child(3)::before{
-   content: '\01F600';
-}
-.emoji-list li:nth-child(4)::before{
-   content: '\01F497';
-}
-.emoji-list li:nth-child(5)::before{
-   content: '\01F641';
-}
-.emoji-list li:nth-child(6)::before{
-   content: '\01F61B';
-}
-.emoji-list li:nth-child(7)::before{
-   content: '\01F62E';
-}
-.emoji-list li:nth-child(8)::before{
-   content: '\01F525';
-   /* debug */
-   padding-left: 4.2px;
-   position: relative;
-   left: -2px;
-}
-.emoji-list li:nth-child(9)::before{
-   content: '\01F624';
-}
-.emoji-list li:nth-child(10)::before{
-   content: '\2728';
-}
-.emoji-list li:nth-child(11)::before{
-   content: '\01F44E';
-   /* debug */
-   padding: 0 1px;
-}
-.emoji-list li:nth-child(12)::before{
-   content: '\01F44D';
-   /* debug */
-   padding: 0 1px;
+   background: rgba(169, 222, 252, 0.8);
 }
