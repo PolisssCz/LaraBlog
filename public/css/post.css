@@ -182,7 +182,7 @@ blockquote.form-group {
 }
 .err{
    position: relative;
-   top: 11px;
+   top: -10px;
    margin: 5px;
    padding: 5px;
    background: red;
