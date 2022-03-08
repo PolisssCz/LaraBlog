@@ -4,8 +4,10 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-            
-       
+
+        <!-- Getting the home address, for JavaScript -->
+        <script> var baseURL = '{{ route('home') }}'; </script>
+
         <title>@include('components.title') / LARAblog!</title>
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 

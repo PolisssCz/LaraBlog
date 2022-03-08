@@ -97,7 +97,7 @@ var emojiBtn = $(".emoji-btn");
 emojiBtn.on('click', function () { 
     if ($(".emoji-btn.active").length == 0) {
         // opening the emoji menu
-        emojiBtn.attr("src","img/app/a-emoji-icon-R.png")
+        emojiBtn.attr("src",''+ baseURL +'/img/app/a-emoji-icon-R.png')
                 .addClass('active')
         $(".emoji-list").css('display', 'grid');
         $(".emoji-list").hide().fadeIn();
@@ -105,7 +105,7 @@ emojiBtn.on('click', function () {
     else { 
         // close the emoji menu
         var emojiActive = $(".emoji-btn.active");
-        emojiActive.attr("src","img/app/emoji-icon-R.png");
+        emojiActive.attr("src",''+ baseURL +'/img/app/emoji-icon-R.png');
             
         $(".emoji-list").css('display', 'none');
         $(".emoji-list").show().fadeOut().queue(function(next){
